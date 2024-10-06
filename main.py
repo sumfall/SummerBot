@@ -37,7 +37,7 @@ async def channel_function(ctx: SlashContext, text: str = None):
         await ctx.send("ERROR: Please select an option", ephemeral=True)
     elif text:
         print("Sent: " + text)
-        await ctx.send(text, ephemeral=False)
+        await ctx.send(text)
 
 
 if __name__ == "__main__":
